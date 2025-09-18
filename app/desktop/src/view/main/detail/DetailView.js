@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.detail.DetailView', {
+Ext.define('extJS_Test_Task.view.main.detail.DetailView', {
 	extend: 'Ext.Container',
 	xtype: 'detailview',
   cls: 'detailview',

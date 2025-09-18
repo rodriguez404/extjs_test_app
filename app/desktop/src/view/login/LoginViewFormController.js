@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.startup.LoginFormController', {
+Ext.define('extJS_Test_Task.view.startup.LoginFormController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.form-login',
 

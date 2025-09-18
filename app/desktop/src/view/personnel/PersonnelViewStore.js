@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.personnel.PersonnelViewStore', {
+Ext.define('extJS_Test_Task.view.personnel.PersonnelViewStore', {
     extend: 'Ext.data.Store',
     alias: 'store.personnelviewstore',
     fields: [

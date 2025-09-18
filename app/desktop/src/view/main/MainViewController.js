@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.MainViewController', {
+Ext.define('extJS_Test_Task.view.main.MainViewController', {
 	extend: 'Ext.app.ViewController',
 	alias: 'controller.mainviewcontroller',
 
@@ -73,6 +73,12 @@ Ext.define('MyExtGenApp.view.main.MainViewController', {
 		else {
 			button.setIconCls('x-fa fa-arrow-right');
 		}
+	},
+
+	onHeaderViewReturnToLogin: function (button) {
+		var vm = this.getViewModel();
+
+		this.redirectTo( 'loginview' );
 	},
 
 	onBottomViewlogout: function () {

@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.nav.NavView', {
+Ext.define('extJS_Test_Task.view.main.nav.NavView', {
     extend: 'Ext.Panel',
     xtype: 'navview',
     controller: "navviewcontroller",

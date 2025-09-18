@@ -1,7 +1,7 @@
-Ext.define('MyExtGenApp.Application', {
+Ext.define('extJS_Test_Task.Application', {
 	extend: 'Ext.app.Application',
-	name: 'MyExtGenApp',
-	requires: ['MyExtGenApp.*'],
+	name: 'extJS_Test_Task',
+	requires: ['extJS_Test_Task.*'],
 	defaultToken: 'mainview',
 
 	removeSplash: function () {

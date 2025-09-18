@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.nav.NavViewController', {
+Ext.define('extJS_Test_Task.view.main.nav.NavViewController', {
 	extend: "Ext.app.ViewController",
 	alias: "controller.navviewcontroller",
 

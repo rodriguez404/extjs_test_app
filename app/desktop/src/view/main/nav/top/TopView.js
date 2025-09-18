@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.nav.top.TopView', {
+Ext.define('extJS_Test_Task.view.main.nav.top.TopView', {
     extend: 'Ext.Toolbar',
     xtype: 'topview',
     cls: 'topview',

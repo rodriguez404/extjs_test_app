@@ -2,7 +2,7 @@
   "name": "my-app",
   "product": "ext",
   "version": "0.0.1",
-  "description": "my-ext-gen-app description for Ext JS app MyExtGenApp",
+  "description": "my-ext-gen-app description for Ext JS app extJS_Test_Task",
   "repository": {
     "type": "git",
     "url": "https://github.com/"

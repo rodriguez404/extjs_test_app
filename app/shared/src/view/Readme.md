@@ -1,1 +1,1 @@
-# MyExtGenApp shared/app
+# extJS_Test_Task shared/app

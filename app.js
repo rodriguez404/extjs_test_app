@@ -1,4 +1,4 @@
 Ext.application({
-	extend: 'MyExtGenApp.Application',
-	name: 'MyExtGenApp'
+	extend: 'extJS_Test_Task.Application',
+	name: 'extJS_Test_Task'
 });

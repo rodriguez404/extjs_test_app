@@ -1,8 +1,8 @@
-Ext.define('MyExtGenApp.view.main.MainViewModel', {
+Ext.define('extJS_Test_Task.view.main.MainViewModel', {
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.mainviewmodel',
 	data: {
-		name: 'MyExtGenApp',
+		name: 'extJS_Test_Task',
 		navCollapsed:       false,
 		navview_max_width:    300,
 		navview_min_width:     44,

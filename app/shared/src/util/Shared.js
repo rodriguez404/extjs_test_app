@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.util.Shared', {
+Ext.define('extJS_Test_Task.util.Shared', {
 	alternateClassName: ['Shared'],
 	singleton: true,
 

@@ -1,8 +1,8 @@
-Ext.define('MyExtGenApp.view.startup.LoginForm', {
+Ext.define('extJS_Test_Task.view.startup.LoginForm', {
     extend: 'Ext.form.Panel',
     xtype: 'form-login',
     controller: 'form-login',
-    title: 'Login',
+    title: 'Авторизация',
 
     bodyPadding: 20,
     width: 320,

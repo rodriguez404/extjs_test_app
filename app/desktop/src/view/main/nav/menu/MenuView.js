@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.nav.menu.MenuView', {
+Ext.define('extJS_Test_Task.view.nav.menu.MenuView', {
     extend: 'Ext.list.Tree',
     xtype: 'menuview',
     viewModel: {},

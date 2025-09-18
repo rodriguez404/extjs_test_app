@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.personnel.PersonnelView',{
+Ext.define('extJS_Test_Task.view.personnel.PersonnelView',{
     extend: 'Ext.grid.Grid',
     xtype: 'personnelview',
     cls: 'personnelview',

@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.nav.bottom.BottomView', {
+Ext.define('extJS_Test_Task.view.main.nav.bottom.BottomView', {
 	extend: 'Ext.Toolbar',
 	xtype: 'bottomview',
 	cls: 'bottomview',

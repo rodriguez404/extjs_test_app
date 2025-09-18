@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.footer.FooterView', {
+Ext.define('extJS_Test_Task.view.main.footer.FooterView', {
     extend: 'Ext.Toolbar',
     xtype: 'footerview',
     cls: 'footerview',

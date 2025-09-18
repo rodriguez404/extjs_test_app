@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.home.HomeView',{
+Ext.define('extJS_Test_Task.view.home.HomeView',{
 	xtype: 'homeview',
 	cls: 'homeview',
 	controller: {type: 'homeviewcontroller'},

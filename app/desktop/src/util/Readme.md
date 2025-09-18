@@ -1,1 +1,1 @@
-# MyExtGenApp
+# extJS_Test_Task

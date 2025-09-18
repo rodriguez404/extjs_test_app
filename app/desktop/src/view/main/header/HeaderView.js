@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.header.HeaderView', {
+Ext.define('extJS_Test_Task.view.main.header.HeaderView', {
     extend: 'Ext.Toolbar',
     xtype: 'headerview',
     cls: 'headerview',
@@ -9,13 +9,14 @@ Ext.define('MyExtGenApp.view.main.header.HeaderView', {
             cls: 'headerviewtext',
             bind: { html: '{heading}' }
         },
-        '->',
+        // '->',
         {
             xtype: 'button',
             ui: 'headerbutton',
-            reference: 'detailtoggle',
-            handler: 'onHeaderViewDetailToggle',
-            iconCls: 'x-fa fa-arrow-left'
+            reference: 'returntologin',
+            handler: 'onHeaderViewReturnToLogin',
+            html: 'Выход'
+            // iconCls: 'x-fa fa-arrow-left'
         }
     ]
 });

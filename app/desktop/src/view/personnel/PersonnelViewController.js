@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.personnel.PersonnelViewController', {
+Ext.define('extJS_Test_Task.view.personnel.PersonnelViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.personnelviewcontroller',
 

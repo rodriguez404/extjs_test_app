@@ -1,4 +1,4 @@
-Ext.define('MyExtGenApp.view.main.MainView', {
+Ext.define('extJS_Test_Task.view.main.MainView', {
     extend: 'Ext.Container',
     xtype: 'mainview',
     controller: 'mainviewcontroller',

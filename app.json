@@ -1,6 +1,6 @@
 {
-  "name": "MyExtGenApp",
-  "namespace": "MyExtGenApp",
+  "name": "extJS_Test_Task",
+  "namespace": "extJS_Test_Task",
   "version": "1.0.0.0",
   "framework": "ext",
   "template": "moderndesktop",
@@ -26,7 +26,7 @@
   "overrides": ["app/shared/overrides","app/${build.id}/overrides"],
 
   "sass": {
-    "namespace": "MyExtGenApp",
+    "namespace": "extJS_Test_Task",
 
     "etc": [
       "sass/etc/all.scss"
