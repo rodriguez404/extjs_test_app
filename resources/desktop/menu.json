@@ -2,6 +2,7 @@
   "leaf": false,
   "children": [
     { "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
+    { "text": "Goods", "iconCls": "x-fa fa-home", "xtype": "goodsview", "leaf": true },
     { "text": "Personnel", "iconCls": "x-fa fa-table", "xtype": "personnelview","leaf": true },
     { "text": "Login", "iconCls": "x-fa fa-table", "xtype": "loginview","leaf": true }
   ]
