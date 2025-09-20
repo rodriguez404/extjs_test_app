@@ -77,7 +77,6 @@ Ext.define('extJS_Test_Task.view.home.GoodsView', {
             xtype: 'button',
             handler: 'onClickLogout',
             text: 'Выход',
-            // iconCls: 'x-fa fa-plus'
         }]
     }]
 });
