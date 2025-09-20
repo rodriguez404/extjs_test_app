@@ -2,13 +2,17 @@ Ext.define('extJS_Test_Task.view.home.GoodsViewStore', {
     extend: 'Ext.data.Store',
     alias: 'store.goodstabviewstore',
     fields: [
-        'name', 'email', 'phone'
+        { name: 'id',           type: 'number' },
+        { name: 'name',         type: 'string' },
+        { name: 'description',  type: 'string' },
+        { name: 'cost',         type: 'number' },
+        { name: 'amount',       type: 'number' },
     ],
     data: { items: [
-        { name: 'Jean Luc',   email: "jeanluc.picard@enterprise.com", phone: "555-111-1111" },
-        { name: 'ModernWorf', email: "worf.moghsson@enterprise.com",  phone: "555-222-2222" },
-        { name: 'Deanna',     email: "deanna.troi@enterprise.com",    phone: "555-333-3333" },
-        { name: 'Data',       email: "mr.data@enterprise.com",        phone: "555-444-4444" }
+        { id: "1", name: "Jean Luc",   description: "jeanluc.picard@enterprise.com", cost: "5168761", amount: "0"},
+        { id: "2", name: "ModernWorf", description: "worf.moghsson@enterprise.com",  cost: "51282", amount: "1515" },
+        { id: "3", name: "Deanna",     description: "deanna.troi@enterprise.com",    cost: "533", amount: "15" },
+        { id: "4", name: "Data",       description: "mr.data@enterprise.com",        cost: "5554444444.1222", amount: "2" }
     ]},
     proxy: {
         type: 'memory',

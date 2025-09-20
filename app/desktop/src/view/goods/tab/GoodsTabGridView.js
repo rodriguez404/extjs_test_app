@@ -17,18 +17,35 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
     },
     columns: [
         {
-            text: 'Name',
-            dataIndex: 'name',
+            text: 'ID',
+            dataIndex: 'id',
             editable: true,
             width: 100,
-            cell: {userCls: 'bold'}
+            cell: {userCls: 'bold'},
+            renderer: Ext.util.Format.numberRenderer('0')
         },
-        {text: 'Email',dataIndex: 'email',editable: true, width: 230},
         {
-            text: 'Phone',
-            dataIndex: 'phone',
-            editable: true,
-            width: 150
+            text: 'Имя',
+            dataIndex: 'name',
+            editable: true, 
+            width: 230
+        },
+        {
+            text: 'Описание',
+            dataIndex: 'description',
+            width: 200
+        },
+        {
+            text: 'Стоимость',
+            dataIndex: 'cost',
+            width: 150,
+            renderer: Ext.util.Format.numberRenderer('0.00')
+        },
+        {
+            text: 'Кол-во',
+            dataIndex: 'amount',
+            width: 150,
+            renderer: Ext.util.Format.numberRenderer('0')
         }
     ],
     listeners: {
