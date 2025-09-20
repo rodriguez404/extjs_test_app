@@ -14,10 +14,16 @@ Ext.define('extJS_Test_Task.view.home.GoodsViewController', {
         panel.add({
             closable: true,
             title: title,
-            html: title + ' Content'
+            layout: 'fit',
+            items: [
+                {
+                    xtype: 'personnelview'
+                }
+            ]
         });
 
         this._currentTab++;
+
     },
 
     onClickLogout: function () {

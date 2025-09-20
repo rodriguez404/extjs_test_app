@@ -48,7 +48,6 @@ Ext.define('extJS_Test_Task.view.home.GoodsView', {
 
         defaults: {
             scrollable: true,
-            layout: 'center',
             userCls: 'card',
             tab: {
                 minWidth: 100

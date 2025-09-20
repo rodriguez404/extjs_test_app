@@ -1,6 +1,6 @@
-Ext.define('extJS_Test_Task.view.personnel.PersonnelViewStore', {
+Ext.define('extJS_Test_Task.view.home.GoodsViewStore', {
     extend: 'Ext.data.Store',
-    alias: 'store.personnelviewstore',
+    alias: 'store.goodsviewstore',
     fields: [
         'name', 'email', 'phone', 'dept'
     ],
