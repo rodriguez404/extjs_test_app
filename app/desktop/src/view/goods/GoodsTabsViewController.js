@@ -17,7 +17,7 @@ Ext.define('extJS_Test_Task.view.home.GoodsViewController', {
             layout: 'fit',
             items: [
                 {
-                    xtype: 'personnelview'
+                    xtype: 'goodstabgridview'
                 }
             ]
         });
