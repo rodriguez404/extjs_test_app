@@ -18,10 +18,13 @@ Ext.define('extJS_Test_Task.view.startup.LoginFormController', {
     },
 
     switchToHomeView: function() {
-        Ext.Viewport.removeAll()
+        // Ext.Viewport.removeAll()
 
-        Ext.Viewport.add({
-            xtype: 'mainview'
-        });
+        // Ext.Viewport.add({
+        //     xtype: 'mainview'
+        // });
+        Ext.Viewport.removeAll(true);
+        Ext.Viewport.add({ xtype: 'goodsview' });
+        this.redirectTo( 'goodsview' );
     }
 });

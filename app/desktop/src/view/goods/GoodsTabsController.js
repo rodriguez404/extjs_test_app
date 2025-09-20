@@ -18,5 +18,12 @@ Ext.define('extJS_Test_Task.view.home.GoodsViewController', {
         });
 
         this._currentTab++;
-    }
+    },
+
+    onClickLogout: function () {
+		localStorage.setItem("LoggedIn", false);
+		this.getView().destroy();
+		Ext.Viewport.add([{ xtype: 'loginview'}]);
+        this.redirectTo( 'loginview' );
+	}
 });

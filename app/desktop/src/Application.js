@@ -2,7 +2,7 @@ Ext.define('extJS_Test_Task.Application', {
 	extend: 'Ext.app.Application',
 	name: 'extJS_Test_Task',
 	requires: ['extJS_Test_Task.*'],
-	defaultToken: 'mainview',
+	defaultToken: 'loginview',
 
 	removeSplash: function () {
 		Ext.getBody().removeCls('launching')

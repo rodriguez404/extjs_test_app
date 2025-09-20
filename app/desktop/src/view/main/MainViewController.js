@@ -3,7 +3,7 @@ Ext.define('extJS_Test_Task.view.main.MainViewController', {
 	alias: 'controller.mainviewcontroller',
 
 	routes: { 
-		':xtype': {action: 'mainRoute'}
+		':xtype': {action: 'mainRoute'},
 	},
 
 	initViewModel: function(vm){

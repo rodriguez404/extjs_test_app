@@ -72,6 +72,12 @@ Ext.define('extJS_Test_Task.view.home.GoodsView', {
             handler: 'addTab',
             text: 'Учёт Товаров',
             iconCls: 'x-fa fa-plus'
+        },
+        {
+            xtype: 'button',
+            handler: 'onClickLogout',
+            text: 'Выход',
+            // iconCls: 'x-fa fa-plus'
         }]
     }]
 });
