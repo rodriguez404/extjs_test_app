@@ -1,6 +1,6 @@
-Ext.define('extJS_Test_Task.view.home.GoodsViewController', {
+Ext.define('extJS_Test_Task.view.home.MainViewController', {
 	extend: 'Ext.app.ViewController',
-	alias: 'controller.goodsviewcontroller',
+	alias: 'controller.mainviewcontroller',
 
     addTab: function() {
         var panel = this.lookupReference('tabpanel'),

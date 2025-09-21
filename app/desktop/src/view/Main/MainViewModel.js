@@ -1,8 +1,8 @@
-Ext.define('extJS_Test_Task.view.home.GoodsViewModel', {
+Ext.define('extJS_Test_Task.view.home.MainViewModel', {
 	extend: 'Ext.app.ViewModel',
-	alias: 'viewmodel.goodsviewmodel',
+	alias: 'viewmodel.mainviewmodel',
 	data: {
-		name: 'goodsview'
+		name: 'mainview'
 	},
 
 });

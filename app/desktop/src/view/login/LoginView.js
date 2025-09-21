@@ -6,10 +6,10 @@ Ext.define('extJS_Test_Task.view.startup.LoginView',{
 	requires: [],
 	extend: 'Ext.Container',
 	layout: 'center',
-  scrollable: true,
-  items: [
-	{
-		xtype: 'form-login'
-	}
-  ]
+	scrollable: true,
+	items: [
+		{
+			xtype: 'form-login'
+		}
+	]
 });

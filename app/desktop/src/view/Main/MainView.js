@@ -1,8 +1,8 @@
-Ext.define('extJS_Test_Task.view.home.GoodsView', {
+Ext.define('extJS_Test_Task.view.home.MainView', {
     extend: 'Ext.Container',
-	xtype: 'goodsview',
-	cls: 'goodsview',
-	controller: {type: 'goodsviewcontroller'},
+	xtype: 'mainview',
+	cls: 'mainview',
+	controller: {type: 'mainviewcontroller'},
 
     requires: [
         'Ext.tab.Panel',
