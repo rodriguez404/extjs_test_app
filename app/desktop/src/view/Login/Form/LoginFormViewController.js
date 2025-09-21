@@ -24,7 +24,7 @@ Ext.define('extJS_Test_Task.view.startup.LoginFormController', {
         //     xtype: 'mainview'
         // });
         Ext.Viewport.removeAll(true);
-        Ext.Viewport.add({ xtype: 'goodsview' });
-        this.redirectTo( 'goodsview' );
+        Ext.Viewport.add({ xtype: 'mainview' });
+        this.redirectTo( 'mainview' );
     }
 });
