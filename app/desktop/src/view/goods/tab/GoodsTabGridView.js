@@ -7,21 +7,15 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
     viewModel: {type: 'goodstabviewmodel'},
     store: {type: 'goodstabviewstore'},
     height: 500,
+
+    enableColumnResize: true,
+    selectable: { checkbox: false, mode: 'single' },
+
     layout: 'fit',
-    grouped: true,
-    groupFooter: {
-        xtype: 'gridsummaryrow'
-    },
-    plugins: {
-        rowedit: {
-            autoConfirm: false
-        }
-    },
     columns: [
         {
             text: 'ID',
             dataIndex: 'id',
-            editable: true,
             width: 100,
             cell: {userCls: 'bold'},
             renderer: Ext.util.Format.numberRenderer('0'),
@@ -32,8 +26,10 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
         {
             text: 'Имя',
             dataIndex: 'name',
-            editable: true, 
-            width: 230
+            width: 230,
+            cell: {
+                cls: 'clickable-cell'
+            },
         },
         {
             text: 'Описание',
@@ -81,6 +77,13 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
         }
     ],
     listeners: {
-        canceledit: 'onEditCancelled'
+        element: 'element',
+        tap: function(element) {
+            var clickablecell = element.getTarget(".clickable-cell")
+
+            if (clickablecell) {
+                console.log("yes")
+            }
+        },
     }
 });
