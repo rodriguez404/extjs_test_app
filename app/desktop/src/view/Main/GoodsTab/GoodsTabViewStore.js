@@ -14,7 +14,7 @@ Ext.define('extJS_Test_Task.view.home.GoodsViewStore', {
             type: 'json',
             rootProperty: 'items'
         },
-		url: 'resources/desktop/goods.json'
+		url: 'resources/goods.json'
 	},
 	autoLoad: true
 

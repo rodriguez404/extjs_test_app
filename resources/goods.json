@@ -1,0 +1,8 @@
+{
+  "items": [
+    { "id": "1", "name": "Notebook Lenovo", "cost": "59999.99", "amount": "0",  "description": "16'' Ноутбук Lenovo IdeaPad Slim 3 16IAH8 серый"},
+    { "id": "2", "name": "Keyboard OKLICK", "cost": "1000",     "amount": "15", "description": "Клавиатура проводная Oklick 155M [мембранная, клавиш - 104, USB Type-A, черный]"},
+    { "id": "3", "name": "Wi-fi Adapter",   "cost": "200",      "amount": "7",  "description": "Wi-Fi адаптер TP-LINK Archer T3U Plus [USB, 4 (802.11n), 5 (802.11ac), 1267 Мбит/с, 5 ГГц, 2.4 ГГц, антенна - внешняя, передатчик - 20 dBm]"},
+    { "id": "4", "name": "iPhone 16",       "cost": "131199",   "amount": "2",  "description": "6.9'' Смартфон Apple iPhone 16 Pro Max 256 ГБ черный [ядер - 6x(3.89 ГГц), 8 ГБ, 1 SIM, Super Retina XDR, 2868x1320, камера 48+48+12 Мп, NFC, 5G, 4G, GPS]"}
+  ]
+} 
