@@ -58,5 +58,39 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.GoodsTabViewController', {
                 caseSensitive: false
             });
         }
+    },
+
+    clickableCell: function(element) {
+        var clickablecell = element.getTarget(".clickable-cell")
+        if (clickablecell) {
+            record = element.to.record
+            if (record) {
+                this.showContextMenu(record);
+            }
+        }
+    },
+
+    showContextMenu: function(record) {
+    // Удалить старое меню, если есть
+        if (this.contextForm) {
+            this.contextForm.destroy();
+        }
+
+        this.contextForm = Ext.create({
+            xtype: 'contextmenuform'
+        });
+
+        this.contextForm.record = record;
+
+        var refs = this.contextForm.getReferences();
+        console.log(refs)
+        refs.id.setValue(record.get('id'));
+        refs.name.setValue(record.get('name'));
+        refs.description.setValue(record.get('description'));
+        refs.cost.setValue(record.get('cost'));
+        refs.amount.setValue(record.get('amount'));
+
+        Ext.Viewport.add(this.contextForm);
+        this.contextForm.show();
     }
 });

@@ -78,12 +78,6 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
     ],
     listeners: {
         element: 'element',
-        tap: function(element) {
-            var clickablecell = element.getTarget(".clickable-cell")
-
-            if (clickablecell) {
-                console.log("yes")
-            }
-        },
+        tap: 'clickableCell'
     }
 });
