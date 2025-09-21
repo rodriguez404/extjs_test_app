@@ -8,7 +8,7 @@ Ext.define('MyApp.view.ContextMenuForm', {
     width: 450,
     height: 300,
     padding: 16,
-    title: 'Карточка товара:',
+    title: 'Карточка товара',
     closable: true,
     layout: 'vbox',
 
@@ -44,10 +44,27 @@ Ext.define('MyApp.view.ContextMenuForm', {
             reference: 'amount',
         },
         {
-            xtype: 'button',
-            text: 'Сохранить',
-            ui: 'action',
-            handler: 'onSaveTap'
+            xtype: 'container', // Обертка для кнопок в hbox вместо vbox
+            layout: {
+                type: 'hbox',
+                pack: 'right',
+            },
+            defaults: {
+                margin: '4 8 0 4' ,
+                ui: 'action',
+            },
+            items: [
+                {
+                    xtype: 'button',
+                    text: 'Сохранить',
+                    handler: 'onSaveTap'
+                },
+                {
+                    xtype: 'button',
+                    text: 'Отмена',
+                    handler: 'onCloseTap'
+                }
+            ]
         }
     ],
 

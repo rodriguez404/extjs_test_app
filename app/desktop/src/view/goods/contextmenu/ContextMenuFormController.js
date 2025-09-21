@@ -15,5 +15,11 @@ Ext.define('MyApp.controller.ContextMenuFormController', {
         // });
 
         view.close();
+    },
+
+    onCloseTap: function() {
+        var view = this.getView();
+
+        view.close();
     }
 });

@@ -77,13 +77,13 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.GoodsTabViewController', {
         }
 
         this.contextForm = Ext.create({
-            xtype: 'contextmenuform'
+            xtype: 'contextmenuform',
+            title: "Карточка товара: " + record.data.name
         });
 
         this.contextForm.record = record;
 
         var refs = this.contextForm.getReferences();
-        console.log(refs)
         refs.id.setValue(record.get('id'));
         refs.name.setValue(record.get('name'));
         refs.description.setValue(record.get('description'));
