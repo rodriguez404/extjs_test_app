@@ -14,10 +14,22 @@ Ext.define('extJS_Test_Task.view.home.GoodsViewController', {
         panel.add({
             closable: true,
             title: title,
-            layout: 'fit',
             items: [
                 {
-                    xtype: 'goodstabgridview'
+                    xtype: 'searchfieldset',
+                    items: [
+                        {
+                            xtype: 'searchid',
+                            name: 'id' + this._currentTab
+                        },
+                        {
+                            xtype: 'searchdescription',
+                            name: 'description' + this._currentTab
+                        },
+                    ],
+                },
+                {
+                    xtype: 'goodstabgridview',
                 }
             ]
         });
