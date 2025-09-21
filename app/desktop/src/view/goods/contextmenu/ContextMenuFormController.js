@@ -8,11 +8,10 @@ Ext.define('MyApp.controller.ContextMenuFormController', {
 
         if (!record) return;
 
-        console.log("savetap succeeded")
-        // record.set({
-        //     cost: view.lookupReference('cost').getValue(),
-        //     amount: view.lookupReference('amount').getValue()
-        // });
+        record.set({
+            cost: view.lookupReference('cost').getValue(),
+            amount: view.lookupReference('amount').getValue()
+        });
 
         view.close();
     },
