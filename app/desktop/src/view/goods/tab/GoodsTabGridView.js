@@ -46,34 +46,18 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
             text: 'Кол-во',
             dataIndex: 'amount',
             width: 150,
-            renderer: Ext.util.Format.numberRenderer('0')
-            // renderer: function(value, record, dataIndex, cell) {
-            //     var listItem = cell.element.up('.x-listitem');
-            //     var innerElement = cell.element.down('.x-gridcell-body-el');
-            //     // if (value === 0) {
-            //         listItem.addCls('x-gridcell-zero-value');
-            //         listItem.setStyle('background', '#FF0000 !important');
-
-            //         cell.setStyle('background', '#FF0000 !important');
-            //         cell.addCls('x-gridcell-zero-value');
-
-            //         innerElement.addCls('x-gridcell-zero-value');
-            //         innerElement.setStyle('background', '#FF0000 !important');
-            //     // }
-            //     return Ext.util.Format.numberRenderer('0')(value);
-            // }
-            // cell: {
-            //     encodeHtml: false
-            // },
-            // renderer: function(value) {
-            //     var formatted = Ext.util.Format.numberRenderer('0')(value);
-            //     if (value === 0) {
-            //         return `<span style="background: #FF0000; display: block;">
-            //         ${formatted}
-            //         </span>`;
-            //     }
-            //     return formatted;
-            // }
+            cell: {
+                encodeHtml: false
+            },
+            renderer: function(value, record, dataIndex, cell) {
+                if (value === 0) {
+                    cell.setStyle('background:red');
+                }
+                else {
+                    cell.setStyle('background:transparent')
+                }
+                return Ext.util.Format.numberRenderer('0')(value);
+            }
         }
     ],
     listeners: {
