@@ -7,10 +7,6 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
     viewModel: {type: 'goodstabviewmodel'},
     store: {type: 'goodstabviewstore'},
     height: 500,
-
-    enableColumnResize: true,
-    selectable: { checkbox: false, mode: 'single' },
-
     layout: 'fit',
     columns: [
         {
@@ -40,7 +36,15 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
             text: 'Стоимость',
             dataIndex: 'cost',
             width: 150,
-            renderer: Ext.util.Format.numberRenderer('0.00')
+            renderer: function(value) {
+                // Отображать 2 знака после запятой, избегая .00
+                num = parseFloat(value)
+                if (Number.isInteger(num)) {
+                    return num.toString();
+                } else {
+                    return num.toFixed(2);
+                }
+            } 
         },
         {
             text: 'Кол-во',
@@ -50,10 +54,10 @@ Ext.define('extJS_Test_Task.view.home.GoodsView.tab.grid',{
                 encodeHtml: false
             },
             renderer: function(value, record, dataIndex, cell) {
+                // Инлайн-стили фона для перезаписи любых значений в иерархии 
                 if (value === 0) {
                     cell.setStyle('background:red');
-                }
-                else {
+                } else {
                     cell.setStyle('background:transparent')
                 }
                 return Ext.util.Format.numberRenderer('0')(value);
