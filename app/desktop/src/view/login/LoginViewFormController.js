@@ -13,7 +13,7 @@ Ext.define('extJS_Test_Task.view.startup.LoginFormController', {
         if (user === 'admin' && pass === 'padmin') {
             this.switchToHomeView();
         } else {
-            Ext.Msg.alert('❌ Ошибка', 'Неверный логин или пароль');
+            Ext.Msg.alert('Ошибка', 'Неверный логин или пароль');
         }
     },
 

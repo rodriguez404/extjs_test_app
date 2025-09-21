@@ -36,12 +36,26 @@ Ext.define('MyApp.view.ContextMenuForm', {
             label: 'Стоимость',
             labelAlign: 'left',
             reference: 'cost',
+            validators: [
+                {
+                    type: 'format',
+                    matcher: /^\d+(?:\.\d+)?$/,
+                    message: 'Должно быть неотрицательное число с плавающей точкой'
+                }
+            ]
         },
         {
             xtype: 'numberfield',
             label: 'Количество',
             labelAlign: 'left',
             reference: 'amount',
+            validators: [
+                {
+                    type: 'format',
+                    matcher: /^\d+$/,
+                    message: 'Должно быть неотрицательное целое число'
+                }
+            ]
         },
         {
             xtype: 'container', // Обертка для кнопок в hbox вместо vbox
