@@ -14,7 +14,7 @@
 ### 1. Клонировать репозиторий (или скачать zip)
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/rodriguez404/extjs_test_app.git
 ```
 
 ### 2. Установить зависимости:
